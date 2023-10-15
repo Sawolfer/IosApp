@@ -9,26 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var buttonToRead: UIButton!
-    @IBOutlet var buttonToWrite: UIButton!
-    
-    
+//    @IBAction func showPTR(_ sender: Any) {
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        
+//        let ptrViewController = storyboard.instantiateViewController(identifier: "PageToReadViewController")
+//        
+//        self.present(ptrViewController, animated: true, completion: nil)
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        buttonToRead.addTarget(self, action: #selector(openPageToRead), for: .touchUpInside)
-        buttonToWrite.addTarget(self, action: #selector(openPageToWrite), for: .touchUpInside)
         // Do any additional setup after loading the view.
     }
     
-    @objc func openPageToRead(){
-        print("read ")
-    }
-    
-    @objc func openPageToWrite(){
-        print("write")
-    }
     
 }
 
