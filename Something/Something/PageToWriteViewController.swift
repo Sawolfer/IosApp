@@ -9,9 +9,30 @@ import UIKit
 
 class PageToWriteViewController: UIViewController {
 
+    @IBOutlet weak var NameOfNote: UITextField!
+    
+    @IBOutlet weak var BodyOfNote: UITextView!
+    
+    @IBAction func SaveButton(_ sender: Any) {
+        var name = UserDefaults.standard
+        var body = UserDefaults.standard
+        name.set(NameOfNote.text, forKey: "Name")
+        body.set(BodyOfNote.text, forKey: "Body")
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        var tmpName = UserDefaults.standard.object(forKey: "Name")
+       var tmpBody = UserDefaults.standard.object(forKey: "Body")
+        
+        if (tmpName != nil){
+            NameOfNote.text = (tmpName as? String)!
+        }
+        if (tmpBody != nil){
+            BodyOfNote.text = (tmpBody as? String)!
+        }
         // Do any additional setup after loading the view.
     }
     
