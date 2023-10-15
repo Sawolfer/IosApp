@@ -16,17 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxN-7p-ZFk">
+                                <rect key="frame" x="157" y="228" width="79" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Читать"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrE-qv-oKe">
+                                <rect key="frame" x="148" y="316" width="98" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Записать"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTW-uu-lar">
+                                <rect key="frame" x="97" y="409" width="203" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Создать напоминание"/>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BRPM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pW4-2b-Q0k">
-                                <rect key="frame" x="151" y="81" width="91" height="65"/>
+                                <rect key="frame" x="166" y="89" width="62" height="43"/>
                                 <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxN-7p-ZFk">
-                                <rect key="frame" x="108" y="228" width="177" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="копка для прикола "/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -34,11 +44,15 @@
                             <constraint firstItem="pxN-7p-ZFk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1Tp-Ta-tas"/>
                             <constraint firstItem="pW4-2b-Q0k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="Hin-Dm-3jY"/>
                             <constraint firstItem="pxN-7p-ZFk" firstAttribute="top" secondItem="pW4-2b-Q0k" secondAttribute="bottom" constant="54" id="ZRI-fa-Fl6"/>
+                            <constraint firstItem="sTW-uu-lar" firstAttribute="firstBaseline" secondItem="YrE-qv-oKe" secondAttribute="baseline" constant="43" symbolType="layoutAnchor" id="hW4-SS-WFO"/>
                             <constraint firstItem="pW4-2b-Q0k" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qi7-z9-BLq"/>
+                            <constraint firstItem="YrE-qv-oKe" firstAttribute="firstBaseline" secondItem="pxN-7p-ZFk" secondAttribute="baseline" constant="43" symbolType="layoutAnchor" id="xoM-4G-nmM"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="BRPMLabel" destination="pW4-2b-Q0k" id="9jX-kK-y09"/>
+                        <outlet property="buttonToRead" destination="pxN-7p-ZFk" id="QyW-oO-5fP"/>
+                        <outlet property="buttonToWrite" destination="YrE-qv-oKe" id="9EE-MU-9td"/>
                         <outlet property="getSomethingInfo" destination="pxN-7p-ZFk" id="7Af-pg-PyX"/>
                     </connections>
                 </viewController>

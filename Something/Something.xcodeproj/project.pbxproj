@@ -16,6 +16,8 @@
 		B46588242ADACC8300C03BDB /* SomethingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46588232ADACC8300C03BDB /* SomethingTests.swift */; };
 		B465882E2ADACC8300C03BDB /* SomethingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B465882D2ADACC8300C03BDB /* SomethingUITests.swift */; };
 		B46588302ADACC8300C03BDB /* SomethingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B465882F2ADACC8300C03BDB /* SomethingUITestsLaunchTests.swift */; };
+		B4B86B562ADC301500AB5D77 /* PageToRead.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4B86B552ADC301500AB5D77 /* PageToRead.storyboard */; };
+		B4B86B582ADC302B00AB5D77 /* PageToWrite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4B86B572ADC302B00AB5D77 /* PageToWrite.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		B46588292ADACC8300C03BDB /* SomethingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SomethingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B465882D2ADACC8300C03BDB /* SomethingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingUITests.swift; sourceTree = "<group>"; };
 		B465882F2ADACC8300C03BDB /* SomethingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B4B86B552ADC301500AB5D77 /* PageToRead.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PageToRead.storyboard; sourceTree = "<group>"; };
+		B4B86B572ADC302B00AB5D77 /* PageToWrite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PageToWrite.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				B46588152ADACC8300C03BDB /* Assets.xcassets */,
 				B46588172ADACC8300C03BDB /* LaunchScreen.storyboard */,
 				B465881A2ADACC8300C03BDB /* Info.plist */,
+				B4B86B552ADC301500AB5D77 /* PageToRead.storyboard */,
+				B4B86B572ADC302B00AB5D77 /* PageToWrite.storyboard */,
 			);
 			path = Something;
 			sourceTree = "<group>";
@@ -231,8 +237,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4B86B562ADC301500AB5D77 /* PageToRead.storyboard in Resources */,
 				B46588192ADACC8300C03BDB /* LaunchScreen.storyboard in Resources */,
 				B46588162ADACC8300C03BDB /* Assets.xcassets in Resources */,
+				B4B86B582ADC302B00AB5D77 /* PageToWrite.storyboard in Resources */,
 				B46588142ADACC8200C03BDB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
