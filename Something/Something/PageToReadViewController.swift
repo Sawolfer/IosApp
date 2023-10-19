@@ -9,28 +9,38 @@ import UIKit
 
 class PageToReadViewController: UIViewController {
 
-  
     
-//    @IBAction func backToMenu(_ sender: Any) {
-//        self.dismiss(animated: true, completion: nil)
-//    }
+    @IBOutlet weak var DreamsArray: UITableView!
+    
+    let cellIndentifier = String(describing: DreamCell.self)
+    
+    var dreams = [DreamInfo(name: "FirstTest")]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        DreamsArray.delegate = self
+        DreamsArray.dataSource = self
+        DreamsArray.register(UINib(nibName: "Dream", bundle: nil), forCellReuseIdentifier: cellIndentifier )
     }
     
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension PageToReadViewController : UITableViewDelegate,  UITableViewDataSource{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dreams.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIndentifier, for: indexPath) as! DreamCell
+        
+        
+        
+        return cell
+    }
 }

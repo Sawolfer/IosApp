@@ -17,6 +17,9 @@
 		B465882E2ADACC8300C03BDB /* SomethingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B465882D2ADACC8300C03BDB /* SomethingUITests.swift */; };
 		B46588302ADACC8300C03BDB /* SomethingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B465882F2ADACC8300C03BDB /* SomethingUITestsLaunchTests.swift */; };
 		B46AB9002ADC6A9100AF88E8 /* PageToWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AB8FF2ADC6A9100AF88E8 /* PageToWriteViewController.swift */; };
+		B46AB9022AE090DD00AF88E8 /* Dream.xib in Resources */ = {isa = PBXBuildFile; fileRef = B46AB9012AE090DD00AF88E8 /* Dream.xib */; };
+		B46AB9072AE092C400AF88E8 /* DreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AB9062AE092C400AF88E8 /* DreamCell.swift */; };
+		B46AB9092AE094D700AF88E8 /* DreamInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AB9082AE094D700AF88E8 /* DreamInfo.swift */; };
 		B4DB76B42ADC607C000C59A7 /* PageToReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DB76B32ADC607C000C59A7 /* PageToReadViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +55,9 @@
 		B465882D2ADACC8300C03BDB /* SomethingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingUITests.swift; sourceTree = "<group>"; };
 		B465882F2ADACC8300C03BDB /* SomethingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B46AB8FF2ADC6A9100AF88E8 /* PageToWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageToWriteViewController.swift; sourceTree = "<group>"; };
+		B46AB9012AE090DD00AF88E8 /* Dream.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Dream.xib; sourceTree = "<group>"; };
+		B46AB9062AE092C400AF88E8 /* DreamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamCell.swift; sourceTree = "<group>"; };
+		B46AB9082AE094D700AF88E8 /* DreamInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamInfo.swift; sourceTree = "<group>"; };
 		B4DB76B32ADC607C000C59A7 /* PageToReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageToReadViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +109,7 @@
 		B465880B2ADACC8200C03BDB /* Something */ = {
 			isa = PBXGroup;
 			children = (
+				B46AB9032AE0923700AF88E8 /* Storage */,
 				B465880C2ADACC8200C03BDB /* AppDelegate.swift */,
 				B465880E2ADACC8200C03BDB /* SceneDelegate.swift */,
 				B46588102ADACC8200C03BDB /* ViewController.swift */,
@@ -131,6 +138,16 @@
 				B465882F2ADACC8300C03BDB /* SomethingUITestsLaunchTests.swift */,
 			);
 			path = SomethingUITests;
+			sourceTree = "<group>";
+		};
+		B46AB9032AE0923700AF88E8 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				B46AB9012AE090DD00AF88E8 /* Dream.xib */,
+				B46AB9062AE092C400AF88E8 /* DreamCell.swift */,
+				B46AB9082AE094D700AF88E8 /* DreamInfo.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +257,7 @@
 				B46588192ADACC8300C03BDB /* LaunchScreen.storyboard in Resources */,
 				B46588162ADACC8300C03BDB /* Assets.xcassets in Resources */,
 				B46588142ADACC8200C03BDB /* Main.storyboard in Resources */,
+				B46AB9022AE090DD00AF88E8 /* Dream.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,11 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B46AB9092AE094D700AF88E8 /* DreamInfo.swift in Sources */,
 				B4DB76B42ADC607C000C59A7 /* PageToReadViewController.swift in Sources */,
 				B46588112ADACC8200C03BDB /* ViewController.swift in Sources */,
 				B465880D2ADACC8200C03BDB /* AppDelegate.swift in Sources */,
 				B46AB9002ADC6A9100AF88E8 /* PageToWriteViewController.swift in Sources */,
 				B465880F2ADACC8200C03BDB /* SceneDelegate.swift in Sources */,
+				B46AB9072AE092C400AF88E8 /* DreamCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
